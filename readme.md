@@ -4,6 +4,7 @@ The error occurs when:
 
 - using babelify
 - babel is producing source maps
+- babel-core 6.7.2 is installed
 - the code contains a line with an expression, followed by a comment
 - the package.json contains a `browserify` section like so:
 
@@ -44,3 +45,7 @@ Error: /Users/josh/git/babel-sourcemap-error/index.js: Invalid mapping: {"genera
     at /Users/josh/git/babel-sourcemap-error/node_modules/babel-core/lib/transformation/file/index.js:443:26
     at File.mergeSourceMap (/Users/josh/g
 ```
+
+## To fix
+
+Upgrade babel-core
